@@ -1,17 +1,16 @@
 import Header from "@/components/layout/Header";
-import Billboard from "@/components/layout/Billboard";
+import Hero from "@/components/layout/Hero";
 
 export default function HomePage() {
   return (
     <>
       <Header />
-      <main>
-        <Billboard />
 
-        {/* 
-          Placeholder sections — these map 1:1 to Figma frames.
-          We will replace these one by one.
-        */}
+      <main>
+        {/* Hero / Above-the-fold */}
+        <Hero />
+
+        {/* Sections below hero — mapped 1:1 to Figma frames */}
         <section id="product" />
         <section id="features" />
         <section id="security" />
