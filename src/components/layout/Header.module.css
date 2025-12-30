@@ -1,53 +1,60 @@
 .header {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  z-index: 10;
+  height: 88px; /* locked */
+  z-index: 20;
 }
 
-.inner {
-  max-width: 1200px;
+.container {
+  max-width: 1320px; /* matches wide desktop frame in screenshots */
+  height: 100%;
   margin: 0 auto;
-  padding: 24px 32px;
+  padding: 0 40px;
 
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: space-between;
 }
 
-.logo {
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  font-size: 14px;
-}
-
+/* LOGO */
 .logo img {
-  height: 46px;
+  height: 46px; /* Figma Hug height */
   width: auto;
   display: block;
 }
 
+/* NAV */
 .nav {
   display: flex;
-  gap: 32px;
+  justify-content: center;
+  gap: 36px; /* matches visual spacing */
 }
 
 .nav a {
   font-size: 14px;
+  font-weight: 400;
   color: var(--text-muted);
+  letter-spacing: 0.02em;
 }
 
 .nav a:hover {
   color: var(--text-primary);
 }
 
+/* CTA */
 .cta button {
-  padding: 10px 18px;
-  font-size: 13px;
-  border-radius: var(--radius-sm);
+  height: 40px;
+  padding: 0 20px;
 
-  background: transparent;
+  font-size: 13px;
+  font-weight: 500;
+
   color: var(--text-primary);
-  border: 1px solid rgba(255,255,255,0.2);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 6px;
 
   cursor: pointer;
 }
