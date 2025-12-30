@@ -1,0 +1,53 @@
+.header {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  font-size: 14px;
+}
+
+.logo img {
+  height: 46px;
+  width: auto;
+  display: block;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.nav a {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.nav a:hover {
+  color: var(--text-primary);
+}
+
+.cta button {
+  padding: 10px 18px;
+  font-size: 13px;
+  border-radius: var(--radius-sm);
+
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid rgba(255,255,255,0.2);
+
+  cursor: pointer;
+}
