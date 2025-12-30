@@ -1,6 +1,8 @@
 import Header from "@/components/layout/Header";
 import Hero from "@/components/layout/Hero";
 import WhoWeAre from "@/components/layout/WhoWeAre";
+import LightDivider from "@/components/layout/LightDivider";
+
 
 export default function HomePage() {
   return (
@@ -13,6 +15,9 @@ export default function HomePage() {
 
         {/* Who We Are section */}
         <WhoWeAre />
+
+        {/* Light divider */}
+        <LightDivider />
 
         {/* Sections below — mapped 1:1 to Figma frames */}
         <section id="product" />

@@ -1,0 +1,53 @@
+.section {
+  position: relative;
+  height: 260px;
+  background-color: #07191d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Beam container */
+.beamWrapper {
+  position: relative;
+  height: 100%;
+  width: 2px;
+}
+
+/* Core beam */
+.beam {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 2px;
+  height: 100%;
+
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(154, 215, 229, 0.9),
+    transparent
+  );
+}
+
+/* Soft bloom around beam */
+.glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 120px;
+  height: 120px;
+
+  background: radial-gradient(
+    circle,
+    rgba(154, 215, 229, 0.25),
+    transparent 70%
+  );
+
+  filter: blur(8px);
+}
