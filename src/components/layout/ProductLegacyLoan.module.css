@@ -1,0 +1,97 @@
+.section {
+  position: relative;
+  padding: 200px 0;
+  background-color: #07191d;
+  overflow: hidden;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* TEXT */
+.text {
+  max-width: 520px;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(154, 215, 229, 0.6);
+  margin-bottom: 16px;
+}
+
+.text h2 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.text p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(230, 244, 247, 0.75);
+  margin-bottom: 20px;
+}
+
+.points {
+  margin-top: 24px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.points li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: rgba(230, 244, 247, 0.7);
+}
+
+.points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(154, 215, 229, 0.8);
+}
+
+/* VISUAL PANEL */
+.visual {
+  position: relative;
+  height: 420px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Soft internal glow */
+.visualGlow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top left,
+    rgba(154, 215, 229, 0.25),
+    transparent 70%
+  );
+}
+
+/* Subtle frame */
+.visualFrame {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  backdrop-filter: blur(1px);
+}
