@@ -1,5 +1,6 @@
 import Header from "@/components/layout/Header";
 import Hero from "@/components/layout/Hero";
+import WhoWeAre from "@/components/layout/WhoWeAre";
 
 export default function HomePage() {
   return (
@@ -10,7 +11,10 @@ export default function HomePage() {
         {/* Hero / Above-the-fold */}
         <Hero />
 
-        {/* Sections below hero — mapped 1:1 to Figma frames */}
+        {/* Who We Are section */}
+        <WhoWeAre />
+
+        {/* Sections below — mapped 1:1 to Figma frames */}
         <section id="product" />
         <section id="features" />
         <section id="security" />
