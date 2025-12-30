@@ -1,0 +1,37 @@
+.section {
+  padding: 160px 0 200px;
+  background: #050f12;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.inner h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 64px;
+  max-width: 520px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px 80px;
+}
+
+.card h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #e6f4f7;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(230, 244, 247, 0.7);
+}

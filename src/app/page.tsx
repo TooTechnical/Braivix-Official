@@ -3,6 +3,9 @@ import Hero from "@/components/layout/Hero";
 import WhoWeAre from "@/components/layout/WhoWeAre";
 import LightDivider from "@/components/layout/LightDivider";
 import ProductLegacyLoan from "@/components/layout/ProductLegacyLoan";
+import DarkTransition from "@/components/layout/DarkTransition";
+import FeatureGrid from "@/components/layout/FeatureGrid";
+
 
 
 
@@ -23,6 +26,13 @@ export default function HomePage() {
 
         {/* Product: Legacy Loan */}
         <ProductLegacyLoan />
+
+        {/* Dark transition */}
+        <DarkTransition />
+
+        {/* Feature grid */}
+        <FeatureGrid />
+        
 
         {/* Sections below — mapped 1:1 to Figma frames */}
         <section id="product" />
